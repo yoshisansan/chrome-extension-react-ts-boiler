@@ -1,0 +1,21 @@
+{
+  "name": "Hello World",
+  "description" : "Chrome拡張機能のテストアプリ",
+  "version": "1.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "/src/popup.html",
+    "default_icon": {
+      "32": "/src/assets/earth-32px.png",
+      "48": "/src/assets/earth-48px.png"
+    }
+  },
+  "icons": {
+    "32": "/src/assets/earth-32px.png",
+    "48": "/src/assets/earth-48px.png"
+  }
+}

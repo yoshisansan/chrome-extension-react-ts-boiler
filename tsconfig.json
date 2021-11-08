@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "ES2020",
+    "jsx": "react",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "strict": true,
+    "rootDirs": ["."],
+    "baseUrl": "./src",
+    "paths": {
+      "components*": ["src/components*"],
+    },
+    "outDir": "./dist",
+    "lib": [
+      "ES2020",
+      "DOM"
+    ]
+  },
+  "exclude": ["node_modules", "dist"]
+}
