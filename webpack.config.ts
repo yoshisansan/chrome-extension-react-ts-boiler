@@ -33,7 +33,7 @@ const config: Configuration = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-            loader: 'babel-loader'  // Loader to use for js and jsx files
+            loader: 'babel-loader'
         }
       },
       {
@@ -45,7 +45,15 @@ const config: Configuration = {
             options: { url: false }
           }
         ]
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
   resolve: {
@@ -56,7 +64,7 @@ const config: Configuration = {
   },
   output: {
     filename: "[name].js",
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/ChromeExtensionFile`,
   },
   plugins: [
     new HtmlWebPackPlugin({

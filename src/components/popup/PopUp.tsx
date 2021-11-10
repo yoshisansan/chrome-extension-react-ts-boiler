@@ -4,7 +4,7 @@ const PopUp: VFC = () => {
   const [plus, setPlus] = useState<number>(0);
   return (
     <div>
-      <h1>React TypeScript Boiler Template</h1>
+      <h1>ReactTS Boilerplate</h1>
       <h2>カウンター</h2>
       <button onClick={() => setPlus(plus + 1)}>{plus}</button>
     </div>
