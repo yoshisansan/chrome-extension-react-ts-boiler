@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from "react-dom"
-import PopUp from "./components/popup/popup";
+import PopUp from "./components/popup/PopUp";
 
 const App = () => <PopUp />
 

@@ -5,6 +5,7 @@ const PopUp: VFC = () => {
   return (
     <div>
       <h1>React TypeScript Boiler Template</h1>
+      <h2>カウンター</h2>
       <button onClick={() => setPlus(plus + 1)}>{plus}</button>
     </div>
   )
