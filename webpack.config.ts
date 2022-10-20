@@ -68,7 +68,7 @@ const config: Configuration = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: '/src/popup.html',
+      template: './src/popup.html',
     }),
     new CopyPlugin({
       patterns: [
